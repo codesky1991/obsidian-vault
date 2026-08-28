@@ -1,0 +1,11 @@
+[Unit]
+Description=Obsidian Vault Auto Sync Timer
+Description=Run auto sync every 5 minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+Unit=obsidian-sync.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,16 @@
+[Unit]
+Description=Obsidian Vault Auto Sync Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/obsidian-vault
+ExecStart=/root/obsidian-vault/watch-sync.sh
+Restart=on-failure
+RestartSec=10
+StandardOutput=append:/root/obsidian-vault/sync-service.log
+StandardError=append:/root/obsidian-vault/sync-service.log
+
+[Install]
+WantedBy=multi-user.target

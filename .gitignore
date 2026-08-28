@@ -1,0 +1,18 @@
+# Obsidian
+.trash/
+.vault-backups/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+.sync.log
+.watch.log
+sync-service.log
+.cron.log
+
+# Temp
+*.tmp
+*.bak

@@ -1,0 +1,132 @@
+# Obsidian Vault 自动同步配置
+
+## 方案一：Systemd 服务（实时监控，推荐）
+
+### 安装服务
+```bash
+# 复制服务文件
+sudo cp /root/obsidian-vault/obsidian-sync.service /etc/systemd/system/
+sudo cp /root/obsidian-vault/watch-sync.sh /root/obsidian-vault/auto-sync.sh /usr/local/bin/
+sudo chmod +x /usr/local/bin/watch-sync.sh /usr/local/bin/auto-sync.sh
+
+# 重新加载 systemd
+sudo systemctl daemon-reload
+
+# 启用并启动服务
+sudo systemctl enable obsidian-sync.service
+sudo systemctl start obsidian-sync.service
+
+# 查看状态
+sudo systemctl status obsidian-sync.service
+
+# 查看日志
+tail -f /root/obsidian-vault/.watch.log
+```
+
+### 常用命令
+```bash
+# 启动
+sudo systemctl start obsidian-sync.service
+
+# 停止
+sudo systemctl stop obsidian-sync.service
+
+# 重启
+sudo systemctl restart obsidian-sync.service
+
+# 查看日志
+journalctl -u obsidian-sync.service -f
+```
+
+---
+
+## 方案二：Crontab 定时同步（简单方案）
+
+### 编辑定时任务
+```bash
+crontab -e
+```
+
+### 添加以下任务（每5分钟检查一次）
+```cron
+# 每5分钟自动同步
+*/5 * * * * /root/obsidian-vault/auto-sync.sh >> /root/obsidian-vault/.cron.log 2>&1
+
+# 每天凌晨2点同步一次（备用）
+0 2 * * * /root/obsidian-vault/auto-sync.sh >> /root/obsidian-vault/.cron.log 2>&1
+```
+
+### 查看 crontab
+```bash
+crontab -l
+```
+
+---
+
+## 方案三：Git Hooks（本地提交触发）
+
+### 安装 Git Hooks
+```bash
+cd /root/obsidian-vault
+
+# 创建 post-commit hook
+cat > .git/hooks/post-commit << 'EOF'
+#!/bin/bash
+# 自动推送到远程
+git push origin main
+EOF
+
+chmod +x .git/hooks/post-commit
+```
+
+---
+
+## 方案四：开机自启（配合方案一或二）
+
+```bash
+# 确保服务开机自启
+sudo systemctl enable obsidian-sync.service
+
+# 或者添加到 rc.local
+echo "/root/obsidian-vault/watch-sync.sh &" >> /etc/rc.local
+```
+
+---
+
+## 日志位置
+
+| 文件 | 说明 |
+|------|------|
+| `.sync.log` | 自动同步日志 |
+| `.watch.log` | 文件监控日志 |
+| `sync-service.log` | 服务日志 |
+| `.cron.log` | 定时任务日志 |
+
+---
+
+## 故障排除
+
+### 查看服务是否运行
+```bash
+ps aux | grep watch-sync
+```
+
+### 查看最近日志
+```bash
+tail -20 /root/obsidian-vault/.watch.log
+```
+
+### 手动触发同步
+```bash
+/root/obsidian-vault/auto-sync.sh
+```
+
+### 如果推送失败（Git 认证问题）
+```bash
+# 配置 SSH 密钥
+ssh-keygen -t ed25519 -C "your_email@example.com"
+cat ~/.ssh/id_ed25519.pub  # 添加到 GitHub
+
+# 测试连接
+ssh -T git@github.com
+```

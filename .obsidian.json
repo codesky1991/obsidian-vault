@@ -1,0 +1,878 @@
+{
+  "accentColor": "#7c3aed",
+  "attachmentFolderPath": "90-Attachments",
+  "audioCompressor": {
+    "bitrate": 128,
+    "channels": 2,
+    "sampleRate": 44100
+  },
+  "autoApplyTemplateConvention": true,
+  "autoNewLine": false,
+  "automaticallyExtractHighlights": false,
+  "backlinkToUnresolvedOnly": false,
+  "baseFontSize": 16,
+  "bdForcf": false,
+  "browserEnabled": true,
+  "bulletIndicator": true,
+  "cancelEditOnContextMenu": false,
+  "carddaßServerConfig": {
+    "certPath": "",
+    "enabled": false,
+    "keyPath": "",
+    "url": ""
+  },
+  "categoryFolderPath": "",
+  "chatVendor": "ollama",
+  "closeSimilarTabs": false,
+  "collapseSidebar": false,
+  "commandPalette": {
+    "showOptionsSection": true,
+    "sortSubstring": "alphabetical"
+  },
+  "compactFolders": true,
+  "confirmationBeforeDeletingMultiple": true,
+  "copyAs": {},
+  "cursorStyle": "line",
+  "customCss": false,
+  "dailyNotes": {
+    "folder": "91-Inbox",
+    "format": "YYYY-MM-DD",
+    "template": "00-Templates/Daily"
+  },
+  "defaultEditableListItemPrefix": "- ",
+  "deleteRelatedFilePolicy": "local",
+  "devOptions": {
+    "trashOnDelete": true,
+    "disable gc": false
+  },
+  "dict": {
+    "enable": true,
+    "theme": "default"
+  },
+  "documentation": [
+    "https://help.obsidian.md/Obsidian/Index"
+  ],
+  "embedMetadata": {
+    "includeEmbedHeight": true,
+    "includeFrontmatter": true
+  },
+  "embedPlayer": {
+    "enableAp": true
+  },
+  "encryptIntegrity": false,
+  "encryptionConfig": {
+    "usePassword": false,
+    "showPassword": false
+  },
+  "en scheduled630": {
+    "left": 10
+  },
+  "experimental compact toolbar": false,
+  "experimentalSettingsTab": false,
+  "explainTheseUrls": false,
+  "extraFontSizes": {
+    "size1": 12,
+    "size2": 14,
+    "size3": 16,
+    "size4": 18,
+    "size5": 20,
+    "size6": 24,
+    "size7": 28,
+    "size8": 32,
+    "size9": 36
+  },
+  "fileLayoutGroup": "access:access",
+  "fileTree": {
+    "collapseAll": false,
+    "delay": 300,
+    "expandOnLoad": false,
+    "filterPath": true,
+    "folderIcon": "folder",
+    "ignoreFolders": [
+      ".obsidian"
+    ],
+    "manualOnly": false,
+    "maxScanDepth": 5,
+    "onRoots": "both"
+  },
+  "fileSortOrder": "byFileSize",
+  "filesIdSet": [],
+  "focus": {
+    "newTab": false,
+    "newTabPosition": "next"
+  },
+  "foldGutter": {
+    "status": false
+  },
+  "fonts": {
+    "font": "Inter",
+    "fontHeading": "Inter",
+    "fontList": [
+      "Georgia",
+      "Menlo",
+      "Helvetica Neue",
+      "Arial",
+      "Times New Roman",
+      "Courier New",
+      "Verdana",
+      "system-ui"
+    ],
+    "fontInter": "Inter"
+  },
+  "footnoteColorInPreview": true,
+  "footnoteInPreview": true,
+  "forceAllowEditFiles": [],
+  "formatDisabled": [],
+  "formatHasPrompted": true,
+  "foundFilesExpanded": false,
+  "frontmatterKeyColor": "#7c3aed",
+  "fullscreen": false,
+  "funnyFolds": false,
+  "globalAutoSaveInterval": 120,
+  "globalSearch": {
+    "contextual": true,
+    "deduplicateAliases": false,
+    "inheritConfig": "default"
+  },
+  "graph": {
+    "corePlugins": {
+      "backlinks": true,
+      "frontmatter": true,
+      "links": true,
+      "tags": true
+    },
+    "excludeLinkedNotes": true,
+    "filterRules": {},
+    "immediateDelete": false,
+    "lineOpacity": 0.3,
+    "nodeColorSize": 5,
+    "nodeColors": {},
+    "nodeTypes": {
+      "all": true,
+      "attachments": true,
+      "emojis": true,
+      "unresolved": true
+    },
+    "showTags": true,
+    "textSizing": 0,
+    "triangleSize": 0,
+    "vecSize": 1
+  },
+  "groupHeaderPlugin": {
+    "indentLevel": true
+  },
+  "hider": {
+    "statusbar": false
+  },
+  "highlightOnlyIfInHover": true,
+  "hoverEditor": {
+    "enableImmediately": true,
+    "layout": "right"
+  },
+  "howToReachOut": "",
+  "httpConfig": {
+    "timeout": 10000
+  },
+  "iconFolder": "core",
+  "ignoreUpdates": false,
+  "importedVG": false,
+  "inactiveSidebarTab": false,
+  "indexMenu": {
+    "fileIndex": true,
+    "sort": "byFileSize"
+  },
+  "initialText": "Welcome to Obsidian",
+  "insertSpaceAfterAboveHeading": false,
+  "interfaceTextTheme": "",
+  "lastModified": 1735624329169,
+  "lastOpenedDaily": "2026-01-11",
+  "lineWidth": "default",
+  "linkAutocomplete": {
+    "delay": 150,
+    "suppressIfLosingFocus": true
+  },
+  "linkMagazineLink": {
+    "default": false,
+    "global": true
+  },
+  "linkPreview": {
+    "enabled": true,
+    "removeBaseURL": true,
+    "removeWhenEditing": true
+  },
+  "liveMode": {
+    "indentLevel": false
+  },
+  "localGist": false,
+  "logUsageData": false,
+  "lookAndFeel": "dark",
+  "magratheaSettings": {
+    "magratheaServerPath": ""
+  },
+  "maxLocalSearchResultLength": 100,
+  "mediaMetadata": {
+    "captionAfterSave": true,
+    "captionColor": "#aaaaaa",
+    "displayAndEmbed": true,
+    "ignorePdfFormFields": false,
+    "localJina": {
+      "apiKey": "",
+      "enabled": false
+    }
+  },
+  "metadataDisplay": [],
+  "metadataFontFamily": "Arial",
+  "metadataFontSize": 13,
+  "minIndentLevel": 2,
+  "modalPreview": {
+    "editor": {
+      "fontSize": 16
+    }
+  },
+  "monospaceConfig": {
+    "font": "JetBrains Mono"
+  },
+  "newFileLocation": "current",
+  "newLinkFormat": "shortest",
+  "newNoteFrequency": 0,
+  "newUserDuration": 30,
+  "nextPendingLinkTime": 0,
+  "notExistedIncluded": false,
+  "noteHeaderInHoverEditorAndPreview": false,
+  "noteSize": {
+    "baseFontSize": 16
+  },
+  "notificationTimeout": 5,
+  "numReplicas": 1,
+  "objectKey": {
+    "insertDirection": "down"
+  },
+  "officeCampus": {
+    "token": "",
+    "url": ""
+  },
+  "offlineShare": {
+    "enabled": false,
+    "key": ""
+  },
+  "openANewTab": false,
+  "openInbox": false,
+  "openSubFolder": false,
+  "overrides": {},
+  "pagePreviewDelay": 300,
+  "pageTranslucency": false,
+  "panes": {},
+  "password": "",
+  "pasteAsPlainText": false,
+  "pasteFromClipboard": true,
+  "pathAliasValue": "title",
+  "pdf": {
+    "additionalExcludedTypes": [],
+    "display": "default",
+    "enableHighlight": true,
+    "enableKbd": true,
+    "enablePDFLense": true,
+    "enableWideMode": false,
+    "fullSize": true,
+    "lastPartOfURL": "page",
+    "page": true,
+    "pageLabelType": "italic",
+    "showStatus": true,
+    "sidebar": {
+      "display": "collapse",
+      "float": true,
+      "width": 30
+    },
+    "useStickyPanes": false,
+    "verticalScroll": true,
+    "zoom": "auto",
+    "zoomType": "auto"
+  },
+  "peerServerConfig": {
+    "showConnectionInfo": false,
+    "tURN": {
+      "enabled": false,
+      "password": "",
+      "port": 3478,
+      "type": "none",
+      "urls": "",
+      "username": ""
+    },
+    "TURN": {
+      "enabled": false,
+      "password": "",
+      "port": 3478,
+      "type": "none",
+      "urls": "",
+      "username": ""
+    },
+    "type": "turn",
+    "useWebRTC": false
+  },
+  "peerServerEnabled": false,
+  "permissions": {
+    "canAccessFolders": false,
+    "canCreateVault": false,
+    "canModify": true,
+    "canRead": true
+  },
+  "pluginEnabled": true,
+  "plugins": {
+    "audio-recorder": {
+      "magnet": false
+    },
+    "backlink": {
+      "enableDedicated_cmp": false,
+      "enableIncomingLinks": false,
+      "openInNewTab": false,
+      "renderInternalLink": true,
+      "showMatchingTag": true,
+      "unresolved": false,
+      "unresolvedCmt": 10
+    },
+    "bookmark": {
+      "bookmarks": []
+    },
+    "canvas": {
+      "canvasStickToLast": false,
+      "canvasToTheRight": false,
+      "cardBackgroundColor": "auto",
+      "cardBackground": "auto",
+      "canvasColor": "auto",
+      "connectionLines": true,
+      "forceConnectEdit": false,
+      "initialMode": "view",
+      "useArrow": true
+    },
+    "checklist": {
+      "characterCmp": false,
+      "replaceUnchecked": false,
+      "style": "simple"
+    },
+    "command-palette": {
+      "sortingOrder": [
+        "byName"
+      ],
+      "statusBarMode": "full"
+    },
+    "daily-notes": {
+      "template": "00-Templates/Daily"
+    },
+    "dataloom": {
+      "behaviour": "embed",
+      "columns": [],
+      "filter": "",
+      "sort": {
+        "column": "",
+        "direction": "asc"
+      },
+      "source": ""
+    },
+    "editor-restriction": {
+      "readOnly": false
+    },
+    "export-plugin": {
+      "folder": "",
+      "folderDefault": true,
+      "hiddenFormats": [],
+      "output": "folder",
+      "outputFormat": "md"
+    },
+    "file-explorer": {
+      "displayLabels": true,
+      "foldStatus": {},
+      "sortOrder": "byFolder"
+    },
+    "global-search": {
+      "requireNonAlpha": false,
+      "searchGTSTokens": "",
+      "searchResultContext": true,
+      "showSearchFilter": false,
+      "sortOrder": "byScore"
+    },
+    "global-regex": {
+      "mode": "first"
+    },
+    "graph": {
+      "colorGroups": {},
+      "excludedTags": [],
+      "filterRules": {},
+      "hideUnresolved": false,
+      "linkColor": "default",
+      "name": "Default",
+      "showAttachments": true,
+      "showTags": true,
+      "showUnresolved": false,
+      "txtColorInPreview": true,
+      "types": {
+        "all": true,
+        "attachments": true,
+        "emojis": true,
+        "unresolved": true
+      }
+    },
+    "image-toolkit": {
+      "autoRotate": true,
+      "defaultActions": {
+        "copy": true,
+        "download": true,
+        "edit": true,
+        "expand": true
+      },
+      "lazyLoad": true,
+      "showInFolder": true,
+      "transition": true
+    },
+    "import-plugin": {
+      "importTimeSetting": "ignore",
+      "keepAttachments": true,
+      "processArrays": "json",
+      "processFrontmatter": true
+    },
+    "index": {
+      "itemProperties": [],
+      "openMode": "new-tab"
+    },
+    "insert-callout": {
+      "defaultType": "note",
+      "icon": true,
+      "multiple": false
+    },
+    "links": {
+      "disableReferenceCreation": false,
+      "preventSelfModifications": true,
+      "shortLinks": false
+    },
+    "outline": {
+      "flattenHeadings": true,
+      "showTitle": false
+    },
+    "pdf-extractor": {
+      "prompt": "Extract the main content from this PDF. Use the same language as the PDF.",
+      "useAI": false
+    },
+    "periodic-notes": {
+      "daily": {
+        "enabled": true,
+        "template": "00-Templates/Daily"
+      },
+      "monthly": {
+        "enabled": false,
+        "template": ""
+      },
+      "quarterly": {
+        "enabled": false,
+        "template": ""
+      },
+      "weekly": {
+        "enabled": false,
+        "template": ""
+      },
+      "yearly": {
+        "enabled": false,
+        "template": ""
+      }
+    },
+    "quickadd": {
+      "quickAddIcon": true
+    },
+    "random-note": {
+      "target": "all"
+    },
+    "recordings": {
+      "deleteRecordingOnLeave": true,
+      "insertTranscription": false,
+    },
+    "relationships": {
+      "enableIncomingLinks": false,
+      "unresolved": false,
+      "unresolvedCmt": 10
+    },
+    "report": {
+      "includeTags": true,
+      "sortingOrder": "byFileSize"
+    },
+    "search": {
+      "searchConfig": {
+        "showPath": false
+      }
+    },
+    "slides": {
+      "theme": "auto"
+    },
+    "smart-append": {
+      "appendLocation": "bottom"
+    },
+    "sort": {
+      "property": "file created"
+    },
+    "spellcheck": {
+      "dictionary": [],
+      "ignoreCodeBlocks": true,
+      "ignoreList": [],
+      "mode": "initialization"
+    },
+    "status-bar": {
+      "itemTypes": [
+        {
+          "id": "obsidian-stat-footer",
+          "index": 10,
+          "type": "obsidian-stat-footer"
+        },
+        {
+          "id": "obsidian-stat-plugin",
+          "index": 0,
+          "type": "obsidian-stat-plugin"
+        }
+      ]
+    },
+    "switcher": {
+      "showAll": true,
+      "sortingOrder": [
+        "byName"
+      ]
+    },
+    "sync-status": {
+      "enabled": false
+    },
+    "tag-pane": {
+      "collapseTag": false,
+      "hierarchical": false,
+      "markCollapse": true,
+      "sortingKey": "frequency",
+      "sortingOrder": "descending"
+    },
+    "tagify": {
+      "suggestionDelay": 1000,
+      "useAlias": false
+    },
+    "task": {
+      "dataview": false,
+      "performInlineParsing": true,
+      "showAdvanced": false,
+      "style": "checklist"
+    },
+    "templates": {
+      "folder": "00-Templates",
+      "insertTemplate": " -> "
+    },
+    "text-expander": {
+      "enableAppleSiliconOptimizations": false,
+      "enableTabShortcut": false
+    },
+    "unique-list": {
+      "autoSort": false,
+      "defaultListType": "unordered",
+      "sortDirection": "ascending"
+    },
+    "word-count": {
+      "density": {
+        "content": true,
+        "headings": true,
+        "listItems": false,
+        "paragraphs": false
+      },
+      "densityTime": 250,
+      "disableLineRead": false,
+      "language": "auto",
+      "mermaidDiagram": false
+    }
+  },
+  "propertyConfig": {
+    "addPropertyOnboarding": true,
+    "autoGenerateNewPropertyValue": true,
+    "properties": {
+      "aliases": {
+        "position": 2
+      },
+      "tags": {
+        "position": 3
+      }
+    }
+  },
+  "promptToDeleteItems": true,
+  "promptToMoveDeletedItems": true,
+  "propertyOrders": {
+    "tags": 3,
+    "aliases": 2
+  },
+  "protectedSource": false,
+  "readonly": false,
+  "readableLineLength": false,
+  "readingConfig": {
+    "clickFold": true,
+    "foldStatus": {
+      "folded": {},
+      "unfolded": {}
+    },
+    "showInlineTitle": true,
+    "showSubtitle": true
+  },
+  "readonlyConfig": {
+    "permissions": []
+  },
+  "recentFiles": [
+    "知识地图.md",
+    "About.md",
+    "02-财经投资/如何选择股票.md",
+    "02-财经投资/股票什么时候没有风险.md",
+    "02-财经投资/2024投资总结与预测.md"
+  ],
+  "recordMediaTimestamp": false,
+  "recover": {
+    "prompted": true,
+    "tempCollection": []
+  },
+  "referenceInNewFile": false,
+  "relatives": {
+    "newTab": true,
+    "samePane": false
+  },
+  "remappedInputKeys": {},
+  "removeLeftRibbonIconsNum": 0,
+  "renameRules": {
+    "KeepCmdKey": false,
+    "replaceWith": "$1",
+    "whenContains": "([^^1-9])\\^([^^1-9])",
+    "whenEndsWith": "\\^([^^1-9])",
+    "whenIs": "\\^([^^1-9])",
+    "whenStartsWith": "\\^([^^1-9])"
+  },
+  "renameAllFields": false,
+  "resourceUsage": {},
+  "rightToLeft": false,
+  "ruby": {
+    "enable": false
+  },
+  "safeMode": false,
+  "scanActiveLine": true,
+  "scanSentences": true,
+  "scannerSandbox": false,
+    "search": {
+    "highlightAllMatches": true,
+    "searchLongText": false,
+    "showSearchFilter": false,
+    "sortOrder": "byScore"
+  },
+  "searchInAudio": false,
+  "searchInCanvas": false,
+  "searchInImage": false,
+  "searchInPdf": false,
+  "sectionPrefix": "^",
+  "security": {
+    "allowedCommands": [],
+    "allowedDashboards": [],
+    "dangerousPathInLinks": false,
+    "disableAllCommands": false,
+    "disablePrint": false,
+    "enableUnsafeLinks": true,
+    "hasPromptedAboutDataview": false,
+    "hasPromptedForRestrictedCmd": true,
+    "restrictedCmd": true,
+    "restrictedCmdPrompt": true,
+    "safeExternalLinks": true
+  },
+  "selectSomeTextAs": {},
+  "selfCmake": {
+    "allow": false
+  },
+  "sessionConfig": {
+    "isNewAppWindow": false
+  },
+  "setLastModified": false,
+  "showLineNumber": false,
+  "showUnsupported": false,
+  "sidebarDisplayText": "滔滔的知识库",
+  "sidebarRibbon": {},
+  "sidebarTab": "file-explorer",
+  "smartIndent": false,
+  "snowflake": {
+    "enabled": false,
+    "interval": 10000,
+    "numParticles": 200,
+    "type": "snowflake"
+  },
+  "spellcheck": {
+    "dictionary": [],
+    "ignoreCodeBlocks": true,
+    "ignoreList": [],
+    "mode": "initialization"
+  },
+  "sql": {
+    "folder": ""
+  },
+  "stackSubfolders": false,
+  "stackTabs": false,
+  "stacks": {
+    "tabsAsPanes": false
+  },
+  "startOnInitialize": false,
+  "statusBar": {
+    "showStatusBar": true
+  },
+  "stickyListItemBullets": true,
+  "strictLineBreak": false,
+  "structure": {
+    "data": {}
+  },
+  "styleSettings": {
+    "collapse": true,
+    "features": {}
+  },
+  "subfolders": {},
+  "supportsTouchdowns": true,
+  "sync": {
+    "additionalEnabledPlugins": [],
+    "additionalFilePatterns": [],
+    "conflictHandlerAutoConf": false,
+    "conflictResolutionAlgorithm": "automatic",
+    "currentObject": {
+      "status": "disconnected"
+    },
+    "deviceId": "",
+    "disableAnalytics": true,
+    "enable": false,
+    "encrypt": false,
+    "encryption": {
+      "enabled": false,
+      "password": ""
+    },
+    "existingMetadata": {},
+    "filesConfig": {
+      "autoPull": false,
+      "conflictPolicy": "keepLocal",
+      "enabled": false,
+      "localConfig": {
+        "path": ""
+      },
+      "remoteConfig": {
+        "path": "/Obsidian",
+        "url": ""
+      },
+      "syncImageAttachments": false,
+      "syncInternalLocal": true,
+      "type": "local"
+    },
+    "maxImageSize": 3000,
+    "resultHistory": [],
+    "selectSome": {
+      "all": false,
+      "attachments": false,
+      "excluded": [],
+      "files": false,
+      "limit": 50,
+      "subfolders": true,
+      "vaultFolder": true
+    },
+    "showStatus": true,
+    "statusItems": [],
+    "tree": {
+      "enabled": false,
+      "local": {
+        "path": ""
+      },
+      "remote": {
+        "path": "/Obsidian",
+        "url": ""
+      }
+    },
+    "useAdvancedConflictUI": false,
+    "vendor": "internal"
+  },
+  "tagGroupExcludeSubfolders": [],
+  "tags": [],
+  "targetBlank": true,
+  "teamSpaces": {
+    "currentSpaceId": "",
+    "spaces": {}
+  },
+  "templatesFolder": "00-Templates",
+  "textTransmit": {
+    "enabled": false,
+    "remoteConfig": {
+      "headers": {},
+      "url": ""
+    },
+    "rules": []
+  },
+  "theme": "obsidian",
+  "themeColor": "purple",
+  "themeFullScreen": false,
+  "tileSize": {
+    "max": 200,
+    "min": 50
+  },
+  "titleOfBar": "滔滔的知识库",
+  "toggleWrap": true,
+  "translucency": false,
+  "treeFolders": {
+    "collapsed": []
+  },
+  "turnDividerToBullet": false,
+  "typewriterMode": {
+    "cursor": "default",
+    "enabled": false,
+    "scroll": true
+  },
+  "uiPreload": true,
+  "unlinkedPods": {
+    "podcast": false
+  },
+  "unsafeExternalLinkMods": true,
+  "updateLastModifiedOnSave": true,
+  "useFrontDateTokenizer": true,
+  "userDateFormat": "",
+  "userDictionaryForSuggestions": "Chinese",
+  "userIgnoreForMultilingual": false,
+  "vascodagama": {
+    "AI": {
+      "chat": {
+        "allowLocal": false,
+        "customEndpoint": "",
+        "model": "gpt-4o-mini",
+        "provider": "openai"
+      }
+    },
+    "contextStrategy": "contextual",
+    "currentIndex": 0,
+    "currentNamespace": "",
+    "enabled": false,
+    "index": {
+      "embeddings": "local",
+      "embeddingsProvider": "openai",
+      "embeddingsProviderConfig": {
+        "apiKey": "",
+        "baseUrl": ""
+      },
+      "fullContentChunking": "sliding-window",
+      "fullContentIndexing": false,
+      "indexName": "",
+      "localEmbeddingsConfig": {
+        "model": "bge-m3",
+        "modelPath": ""
+      }
+    },
+    "indexedNamespaces": [],
+    "ragChunkSize": 512,
+    "showStatus": false
+  },
+  "verboseConfig": false,
+  "version": 3,
+  "view": {
+    "default": "source"
+  },
+  "warnOnDestructiveRemoteWrite": false,
+  "workbench": {
+    "colorTheme": "auto",
+    "customTheme": false,
+    "hidesSidebars": false
+  },
+  "workspace": {
+    "left_sidebar_width": 300,
+    "right_sidebar_width": 400
+  },
+  "zoteroImport": {
+    "path": "",
+    "type": "local"
+  }
+}
