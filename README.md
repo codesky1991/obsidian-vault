@@ -1,5 +1,7 @@
 # Obsidian Vault - 滔滔的知识库
 
+> 基于 Obsidian 的个人知识管理系统，支持双向链接、知识图谱
+
 ## 📋 快速开始
 
 ### 1. 打开仓库
@@ -12,72 +14,158 @@
 
 1. 设置 → 社区插件 → 关闭安全模式
 2. 安装推荐插件：
-   - Templater
-   - Dataview
-   - Calendar
-   - Tag Wrangler
+   - Templater（模板）
+   - Dataview（数据查询）
+   - Calendar（日历）
+   - Tag Wrangler（标签管理）
 
-### 3. 阅读指南
+---
 
-打开 `快速入门指南.md` 了解完整使用方法。
+## ✏️ 如何写笔记
+
+### 笔记存放位置
+
+| 分类 | 文件夹 | 内容示例 |
+|------|--------|----------|
+| 💻 编程学习 | `01-编程学习/` | Git、算法、Hugo、技术教程 |
+| 💰 财经投资 | `02-财经投资/` | 股票、理财、投资分析 |
+| 📚 学习方法 | `03-学习方法/` | 学习技巧、面试经验 |
+| 🏃 生活健康 | `04-生活健康/` | 健身、冥想、饮食 |
+| 💼 职业发展 | `05-职业发展/` | 职业规划、人脉 |
+| 📎 附件 | `90-Attachments/` | 图片、PDF 等文件 |
+| 📥 收件箱 | `91-Inbox/` | 每日临时笔记 |
+
+### 创建新笔记步骤
+
+**方法一：使用模板（推荐）**
+
+1. 按 `Ctrl/Cmd + P` 打开命令面板
+2. 输入 `Templater: Create new note from template`
+3. 选择模板类型（Daily / Note / Book）
+4. 笔记自动创建在光标所在文件夹
+
+**方法二：手动创建**
+
+1. 在对应分类文件夹上右键
+2. 选择「新建笔记」
+3. 命名时用中文，如：`我的编程笔记.md`
+
+### 模板使用
+
+```
+00-Templates/
+├── Daily.md      # 每日笔记模板（年/月/日格式）
+├── Note.md       # 普通笔记模板（带标签、别名）
+└── Book.md       # 读书笔记模板
+```
+
+### frontmatter 格式
+
+```yaml
+---
+created: 2026-08-28
+title: 我的笔记标题
+tags:
+  - 标签1
+  - 标签2
+aliases: [别名1, 别名2]
+source: 来源
+related: [相关笔记]
+---
+
+# 正文内容
+```
+
+### 双向链接
+
+在笔记中使用 `[[笔记名称]]` 创建链接：
+
+```markdown
+这篇笔记和 [[如何选择股票]] 有关联。
+
+![[笔记名称]]  # 嵌入笔记内容
+```
+
+---
 
 ## 📁 目录结构
 
 ```
-├── 00-Templates/      # 模板
-├── 01-编程学习/       # 技术笔记
-├── 02-财经投资/       # 投资笔记
-├── 03-学习方法/       # 学习方法
-├── 04-生活健康/       # 健康生活
-├── 05-职业发展/       # 职业发展
-├── 90-Attachments/   # 附件
-├── 91-Inbox/          # 每日笔记
-├── 知识地图.md        # 知识导航
-└── About.md          # 关于我
+obsidian-vault/
+├── 00-Templates/          # 📝 笔记模板
+│   ├── Daily.md         # 每日笔记
+│   ├── Note.md          # 普通笔记
+│   └── Book.md          # 读书笔记
+│
+├── 01-编程学习/           # 💻 编程技术笔记
+│   ├── Git服务器搭建.md
+│   ├── LeetCode字符串.md
+│   └── ...
+│
+├── 02-财经投资/           # 💰 投资理财笔记
+│   ├── 如何选择股票.md
+│   ├── 理财计划.md
+│   └── ...
+│
+├── 03-学习方法/           # 📚 学习方法笔记
+│   ├── 提升学习效率.md
+│   ├── 面试经验.md
+│   └── ...
+│
+├── 04-生活健康/           # 🏃 健康生活笔记
+│   └── 锻炼与压力管理.md
+│
+├── 05-职业发展/           # 💼 职业发展笔记（待填充）
+│
+├── 90-Attachments/        # 📎 附件（图片、PDF等）
+├── 91-Inbox/             # 📥 收件箱（每日临时笔记）
+├── zz-Archive/           # 📦 归档
+│
+├── 知识地图.md            # 🗺️ 知识体系总览
+├── About.md             # 👤 关于我
+├── 快速入门指南.md        # 📖 完整使用指南
+└── ...
 ```
+
+---
 
 ## 🔄 同步
 
 ### 手动同步
 
 ```bash
+cd /root/obsidian-vault
 ./auto-sync.sh
 ```
 
-### 实时监控同步（推荐）
+### 自动同步
 
 ```bash
-# 方式1：直接运行监控
+# 方式1：定时同步（每5分钟）
+*/5 * * * * /root/obsidian-vault/auto-sync.sh
+
+# 方式2：实时监控
 ./watch-sync.sh
-
-# 方式2：安装为系统服务（后台运行）
-sudo cp obsidian-sync.service /etc/systemd/system/
-sudo systemctl enable obsidian-sync.service
-sudo systemctl start obsidian-sync.service
-
-# 方式3：定时同步（每5分钟）
-# 添加 crontab:
-# */5 * * * * /root/obsidian-vault/auto-sync.sh
 ```
 
-### Hugo 同步
+---
 
-```bash
-./sync-to-hugo.sh
-```
+## 🎯 写作规范
 
-### SSH 密钥配置
+1. **命名**：使用中文，有意义的标题
+2. **标签**：至少添加 1 个标签
+3. **链接**：相关笔记用 `[[链接]]` 关联
+4. **模板**：优先使用模板创建笔记
+5. **归档**：不再编辑的笔记移动到 `zz-Archive/`
 
-已生成专用 SSH 密钥，请将以下公钥添加到 GitHub:
-
-```
-cat ~/.ssh/obsidian_sync.pub
-```
-
-复制输出内容，添加到 GitHub → Settings → SSH Keys
+---
 
 ## 📚 相关资源
 
 - [Obsidian 官网](https://obsidian.md/)
 - [Obsidian 中文文档](https://publish.obsidian.md/help-zh/)
 - [Dataview 文档](https://blacksmithgu.github.io/obsidian-dataview/)
+
+---
+
+*最后更新: 2026-08-28*
